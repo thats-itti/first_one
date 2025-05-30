@@ -72,3 +72,48 @@ cmp.setup({
     { name = "luasnip" },
   }
 })
+
+
+
+
+
+
+
+------------
+
+
+return {
+  -- File Tree
+  { "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
+
+  -- Tagbar
+  { "preservim/tagbar" },
+
+  -- Theme
+  { "folke/tokyonight.nvim" },
+
+  -- Status Line
+  { "nvim-lualine/lualine.nvim" },
+  { "nvim-tree/nvim-web-devicons" },
+
+  -- Treesitter
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+
+  -- Telescope
+  { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+
+  -- Commenting
+  { "numToStr/Comment.nvim", config = true },
+
+  -- Surround
+  { "tpope/vim-surround" },
+
+  -- LSP
+  { "neovim/nvim-lspconfig" },
+
+  -- Autocompletion
+  { "hrsh7th/nvim-cmp" },
+  { "hrsh7th/cmp-nvim-lsp" },
+  { "L3MON4D3/LuaSnip" },
+  { "saadparwaiz1/cmp_luasnip" },
+}
